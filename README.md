@@ -43,9 +43,12 @@ The goal was to identify which stressors — academic pressure, financial stress
 ```
 Student Depression Analysis/
 │
-├── Depression+Student+Dataset.csv   # Raw source data (502 students, 11 columns)
-├── SQLQuery1.sql                    # SQL Server cleaning & transformation script
-└── Tableau Dashboard 3.twb          # Tableau workbook — live SQL Server connection
+├── Data 
+      ├── Depression+Student+Dataset.csv   # Raw source data (502 students, 11 columns)
+├── SQL
+      ├── SQLQuery1.sql                    # SQL Server cleaning & transformation script
+└── Dashboard
+      ├── Tableau Dashboard 3.twb          # Tableau workbook — live SQL Server connection
 ```
 
 ---
