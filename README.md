@@ -1,10 +1,10 @@
-# 🧠 Student Depression Analysis
+# Student Depression Analysis
 
 A full end-to-end data analytics project examining mental health indicators among university students — from raw data cleaning in SQL Server to interactive visual analysis in Tableau.
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Project Overview](#project-overview)
 - [Tools & Technologies](#tools--technologies)
@@ -29,12 +29,16 @@ The goal was to identify which stressors — academic pressure, financial stress
 
 ## Tools & Technologies
 
+<div align="center">
+
 | Tool | Purpose |
 |---|---|
 | **Microsoft SQL Server** | Data storage, cleaning, and transformation |
 | **SQL (T-SQL)** | Data wrangling — standardizing, categorizing, encoding |
 | **Tableau Desktop** | Live SQL connection and dashboard building |
 | **CSV** | Raw source data format |
+
+</div>
 
 ---
 
@@ -59,6 +63,8 @@ Student Depression Analysis/
 **Records:** 502 students
 **Format:** CSV → imported into SQL Server
 
+<div align="center">
+
 | Column | Type | Description |
 |---|---|---|
 | `Gender` | string | Student gender (raw: Male/Female → cleaned: M/F) |
@@ -72,6 +78,8 @@ Student Depression Analysis/
 | `Financial Stress` | integer | Self-reported financial stress level (1–5) |
 | `Family History of Mental Illness` | string | Yes / No |
 | `Depression` | string | Target variable — raw: 0/1 → cleaned: No/Yes |
+
+</div>
 
 ---
 
@@ -108,11 +116,15 @@ SET Age_Group =
   ELSE 'A3' END END
 ```
 
+<div align="center">
+
 | Group | Age Range |
 |---|---|
 | A1 | 18 – 24 |
 | A2 | 25 – 30 |
 | A3 | 30+ |
+
+</div>
 
 #### 3. Add Auto-Increment Index
 ```sql
@@ -146,6 +158,8 @@ The script also includes exploratory `GROUP BY` counts for every key column to u
 
 The dashboard **Student Count Analysis** contains five worksheets, each pairing a stressor variable against a score metric:
 
+<div align="center">
+
 | Sheet | Abbreviation | What it shows |
 |---|---|---|
 | AP & SC | Academic Pressure & Score | Depression rate by academic pressure level |
@@ -153,6 +167,8 @@ The dashboard **Student Count Analysis** contains five worksheets, each pairing 
 | SD & SC | Sleep Duration & Score | Depression rate by sleep duration band |
 | SH & SC | Study Hours & Score | Depression rate by daily study hours |
 | SS & SC | Study Satisfaction & Score | Depression rate by study satisfaction level |
+
+</div>
 
 ---
 
